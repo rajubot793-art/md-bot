@@ -26,8 +26,8 @@ async function aliveCommand(sock, chatId, message) {
                 forwardingScore: 999,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: '120363406588763460@newsletter',
-                    newsletterName: settings.botName || 'Zenitsu Bot',
+                    newsletterJid: '0029VbC8MBZHrDZelHN6bJ2C@newsletter',
+                    newsletterName: settings.botName || '𓄂𝐑𝐀𝐉𝐔 𝟒𝐗 Bot',
                     serverMessageId: -1
                 }
             }
@@ -36,7 +36,7 @@ async function aliveCommand(sock, chatId, message) {
     } catch (error) {
         console.error('Error in alive command:', error);
         await sock.sendMessage(chatId, {
-            text: `🤖 ${settings.botName || "Zenitsu Bot"} is online!`
+            text: `🤖 ${settings.botName || "𓄂𝐑𝐀𝐉𝐔 𝟒𝐗 Bot"} is online!`
         }, { quoted: message });
     }
 }
